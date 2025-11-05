@@ -1,0 +1,782 @@
+[2025-11-05T04:34:01.375Z] PIPELINE STARTED
+[2025-11-05T04:34:01.375Z] STARTING: blinkit_sheets.js
+[2025-11-05T04:34:38.067Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-11-05T04:34:38.068Z] STARTING: instamart_sheets.js
+[2025-11-05T04:35:18.225Z] ✅ SUCCESS: instamart_sheets.js
+[2025-11-05T04:35:18.226Z] STARTING: zepto_sheets.js
+[2025-11-05T04:36:47.929Z] ✅ SUCCESS: zepto_sheets.js
+[2025-11-05T04:36:47.931Z] STARTING: populate_benchmarks.js
+[2025-11-05T04:37:00.994Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-11-05T04:37:00.994Z] FULL PIPELINE SUCCESS
+[2025-11-05T04:51:16.234Z] PIPELINE STARTED
+[2025-11-05T04:51:16.235Z] STARTING: blinkit_sheets.js
+[2025-11-05T04:51:55.585Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-11-05T04:51:55.586Z] STARTING: instamart_sheets.js
+[2025-11-05T04:52:36.061Z] ✅ SUCCESS: instamart_sheets.js
+[2025-11-05T04:52:36.062Z] STARTING: zepto_sheets.js
+[2025-11-05T04:54:05.021Z] ✅ SUCCESS: zepto_sheets.js
+[2025-11-05T04:54:05.025Z] STARTING: populate_benchmarks.js
+[2025-11-05T04:54:16.951Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-11-05T04:54:16.952Z] FULL PIPELINE SUCCESS
+[2025-11-05T04:54:36.386Z] PIPELINE STARTED
+[2025-11-05T04:54:36.386Z] STARTING: blinkit_sheets.js
+[2025-11-05T04:55:12.720Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-11-05T04:55:12.720Z] STARTING: instamart_sheets.js
+[2025-11-05T04:55:54.023Z] ✅ SUCCESS: instamart_sheets.js
+[2025-11-05T04:55:54.024Z] STARTING: zepto_sheets.js
+[2025-11-05T04:57:22.322Z] ✅ SUCCESS: zepto_sheets.js
+[2025-11-05T04:57:22.323Z] STARTING: populate_benchmarks.js
+[2025-11-05T04:57:36.410Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-11-05T04:57:36.410Z] FULL PIPELINE SUCCESS
+[2025-11-05T07:38:04.543Z] PIPELINE STARTED
+[2025-11-05T07:38:04.544Z] STARTING: blinkit_sheets.js
+[2025-11-05T07:38:44.179Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-11-05T07:38:44.179Z] STARTING: instamart_sheets.js
+[2025-11-05T07:39:25.026Z] ✅ SUCCESS: instamart_sheets.js
+[2025-11-05T07:39:25.027Z] STARTING: zepto_sheets.js
+[2025-11-05T07:40:49.237Z] ✅ SUCCESS: zepto_sheets.js
+[2025-11-05T07:40:49.239Z] STARTING: populate_benchmarks.js
+[2025-11-05T07:41:03.598Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-11-05T07:41:03.600Z] FULL PIPELINE SUCCESS
+[2025-11-05T08:14:46.014Z] PIPELINE STARTED
+[2025-11-05T08:14:46.015Z] STARTING: blinkit_sheets.js
+[2025-11-05T08:20:04.157Z] PIPELINE STARTED
+[2025-11-05T08:20:04.158Z] STARTING: blinkit_sheets.js
+[2025-11-05T08:20:42.849Z] SUCCESS: blinkit_sheets.js
+[2025-11-05T08:20:42.853Z] STARTING: instamart_sheets.js
+[2025-11-05T08:21:24.120Z] SUCCESS: instamart_sheets.js
+[2025-11-05T08:21:24.122Z] STARTING: zepto_sheets.js
+[2025-11-05T08:22:49.455Z] SUCCESS: zepto_sheets.js
+[2025-11-05T08:22:49.457Z] STARTING: populate_benchmarks.js
+[2025-11-05T08:23:05.781Z] SUCCESS: populate_benchmarks.js
+[2025-11-05T08:23:05.782Z] FULL PIPELINE SUCCESS
+[2025-11-05T09:45:12.839Z] PIPELINE STARTED
+[2025-11-05T09:45:12.840Z] STARTING: blinkit_sheets.js
+[2025-11-05T09:45:51.045Z] SUCCESS: blinkit_sheets.js
+[2025-11-05T09:45:51.047Z] STARTING: instamart_sheets.js
+[2025-11-05T09:46:30.111Z] SUCCESS: instamart_sheets.js
+[2025-11-05T09:46:30.113Z] STARTING: zepto_sheets.js
+[2025-11-05T09:47:58.239Z] SUCCESS: zepto_sheets.js
+[2025-11-05T09:47:58.241Z] STARTING: populate_benchmarks.js
+[2025-11-05T09:48:10.986Z] SUCCESS: populate_benchmarks.js
+[2025-11-05T09:48:10.986Z] FULL PIPELINE SUCCESS
+[2025-11-05T10:07:25.975Z] PIPELINE STARTED
+[2025-11-05T10:07:25.976Z] STARTING: blinkit_sheets.js
+[2025-11-05T10:08:04.649Z] SUCCESS: blinkit_sheets.js
+[2025-11-05T10:08:04.650Z] STARTING: instamart_sheets.js
+[2025-11-05T10:08:45.709Z] SUCCESS: instamart_sheets.js
+[2025-11-05T10:08:45.709Z] STARTING: zepto_sheets.js
+[2025-11-05T10:10:10.751Z] SUCCESS: zepto_sheets.js
+[2025-11-05T10:10:10.753Z] STARTING: populate_benchmarks.js
+[2025-11-05T10:10:24.394Z] SUCCESS: populate_benchmarks.js
+[2025-11-05T10:10:24.395Z] FULL PIPELINE SUCCESS
+[2025-11-05T10:24:29.096Z] PIPELINE STARTED
+[2025-11-05T10:24:29.097Z] STARTING: blinkit_sheets.js
+[2025-11-05T10:25:07.223Z] SUCCESS: blinkit_sheets.js
+[2025-11-05T10:25:07.225Z] STARTING: instamart_sheets.js
+[2025-11-05T10:25:49.534Z] SUCCESS: instamart_sheets.js
+[2025-11-05T10:25:49.535Z] STARTING: zepto_sheets.js
+[2025-11-05T10:27:14.734Z] SUCCESS: zepto_sheets.js
+[2025-11-05T10:27:14.738Z] STARTING: populate_benchmarks.js
+[2025-11-05T10:27:28.184Z] SUCCESS: populate_benchmarks.js
+[2025-11-05T10:27:28.186Z] FULL PIPELINE SUCCESS
+[2025-11-05T12:29:08.741Z] PIPELINE STARTED
+[2025-11-05T12:29:08.743Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:29:08.750Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:29:08.751Z] ERROR: Command failed: node blinkit_sheets.js
+[2025-11-05T12:29:08.752Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:30:01.297Z] PIPELINE STARTED
+[2025-11-05T12:30:01.298Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:30:01.307Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:30:01.307Z] ERROR: Command failed: node blinkit_sheets.js
+[2025-11-05T12:30:01.307Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:32:29.091Z] PIPELINE STARTED
+[2025-11-05T12:32:29.093Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:32:29.103Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:32:29.103Z] ERROR: Command failed: node blinkit_sheets.js
+[2025-11-05T12:32:29.104Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:40:00.786Z] PIPELINE STARTED
+[2025-11-05T12:40:00.787Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:40:00.794Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:40:00.794Z] ERROR: Command failed: node blinkit_sheets.js
+[2025-11-05T12:40:00.794Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:50:20.043Z] PIPELINE STARTED
+[2025-11-05T12:50:20.044Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:50:20.053Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:50:20.053Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:50:20.053Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:50:30.164Z] PIPELINE STARTED
+[2025-11-05T12:50:30.164Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:50:30.173Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:50:30.173Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:50:30.173Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:50:40.277Z] PIPELINE STARTED
+[2025-11-05T12:50:40.278Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:50:40.284Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:50:40.284Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:50:40.285Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:50:50.402Z] PIPELINE STARTED
+[2025-11-05T12:50:50.402Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:50:50.411Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:50:50.411Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:50:50.411Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:51:00.515Z] PIPELINE STARTED
+[2025-11-05T12:51:00.517Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:51:00.524Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:51:00.525Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:51:00.525Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:51:10.631Z] PIPELINE STARTED
+[2025-11-05T12:51:10.631Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:51:10.639Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:51:10.639Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:51:10.640Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:51:21.001Z] PIPELINE STARTED
+[2025-11-05T12:51:21.002Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:51:21.018Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:51:21.018Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:51:21.019Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:51:31.132Z] PIPELINE STARTED
+[2025-11-05T12:51:31.133Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:51:31.144Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:51:31.145Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:51:31.145Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:51:41.257Z] PIPELINE STARTED
+[2025-11-05T12:51:41.258Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:51:41.265Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:51:41.265Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:51:41.265Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:51:51.370Z] PIPELINE STARTED
+[2025-11-05T12:51:51.370Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:51:51.378Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:51:51.378Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:51:51.378Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:52:01.478Z] PIPELINE STARTED
+[2025-11-05T12:52:01.479Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:52:01.545Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:52:01.545Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:52:01.546Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:52:11.644Z] PIPELINE STARTED
+[2025-11-05T12:52:11.645Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:52:11.651Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:52:11.652Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:52:11.652Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:52:21.923Z] PIPELINE STARTED
+[2025-11-05T12:52:21.924Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:52:21.934Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:52:21.935Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:52:21.935Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:52:32.047Z] PIPELINE STARTED
+[2025-11-05T12:52:32.048Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:52:32.057Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:52:32.058Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:52:32.059Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:52:42.189Z] PIPELINE STARTED
+[2025-11-05T12:52:42.190Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:52:42.201Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:52:42.202Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:52:42.202Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:52:52.316Z] PIPELINE STARTED
+[2025-11-05T12:52:52.317Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:52:52.327Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:52:52.327Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:52:52.327Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:53:02.479Z] PIPELINE STARTED
+[2025-11-05T12:53:02.480Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:53:02.488Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:53:02.489Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:53:02.489Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:53:12.595Z] PIPELINE STARTED
+[2025-11-05T12:53:12.596Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:53:12.607Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:53:12.607Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:53:12.608Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:53:22.716Z] PIPELINE STARTED
+[2025-11-05T12:53:22.717Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:53:22.725Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:53:22.725Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:53:22.726Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:53:32.843Z] PIPELINE STARTED
+[2025-11-05T12:53:32.843Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:53:32.849Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:53:32.849Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:53:32.850Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:53:42.948Z] PIPELINE STARTED
+[2025-11-05T12:53:42.948Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:53:42.954Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:53:42.955Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:53:42.955Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:53:53.057Z] PIPELINE STARTED
+[2025-11-05T12:53:53.057Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:53:53.064Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:53:53.064Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:53:53.095Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:54:03.204Z] PIPELINE STARTED
+[2025-11-05T12:54:03.204Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:54:03.211Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:54:03.211Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:54:03.211Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:54:13.312Z] PIPELINE STARTED
+[2025-11-05T12:54:13.312Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:54:13.319Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:54:13.319Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:54:13.319Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:54:23.431Z] PIPELINE STARTED
+[2025-11-05T12:54:23.432Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:54:23.446Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:54:23.446Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:54:23.448Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:54:33.816Z] PIPELINE STARTED
+[2025-11-05T12:54:33.817Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:54:33.829Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:54:33.829Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:54:33.829Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:54:43.972Z] PIPELINE STARTED
+[2025-11-05T12:54:43.972Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:54:43.980Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:54:43.980Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:54:43.980Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:54:54.085Z] PIPELINE STARTED
+[2025-11-05T12:54:54.085Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:54:54.092Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:54:54.092Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:54:54.093Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:55:04.195Z] PIPELINE STARTED
+[2025-11-05T12:55:04.195Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:55:04.201Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:55:04.202Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:55:04.204Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:55:14.307Z] PIPELINE STARTED
+[2025-11-05T12:55:14.307Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:55:14.313Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:55:14.313Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:55:14.314Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:55:24.417Z] PIPELINE STARTED
+[2025-11-05T12:55:24.418Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:55:24.425Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:55:24.425Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:55:24.425Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:55:34.528Z] PIPELINE STARTED
+[2025-11-05T12:55:34.529Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:55:34.537Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:55:34.537Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:55:34.537Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:55:44.638Z] PIPELINE STARTED
+[2025-11-05T12:55:44.638Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:55:44.645Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:55:44.645Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T12:55:44.645Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T12:55:54.745Z] PIPELINE STARTED
+[2025-11-05T12:55:54.745Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:56:00.603Z] PIPELINE STARTED
+[2025-11-05T12:56:00.604Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:56:37.093Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-11-05T12:56:37.093Z] STARTING: instamart_sheets.js
+[2025-11-05T12:57:18.391Z] ✅ SUCCESS: instamart_sheets.js
+[2025-11-05T12:57:18.392Z] STARTING: zepto_sheets.js
+[2025-11-05T12:58:42.452Z] ✅ SUCCESS: zepto_sheets.js
+[2025-11-05T12:58:42.455Z] STARTING: populate_benchmarks.js
+[2025-11-05T12:58:58.426Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-11-05T12:58:58.426Z] FULL PIPELINE SUCCESS
+[2025-11-05T12:58:58.594Z] PIPELINE STARTED
+[2025-11-05T12:58:58.594Z] STARTING: blinkit_sheets.js
+[2025-11-05T12:59:34.567Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-11-05T12:59:34.567Z] STARTING: instamart_sheets.js
+[2025-11-05T13:00:16.363Z] ✅ SUCCESS: instamart_sheets.js
+[2025-11-05T13:00:16.372Z] STARTING: zepto_sheets.js
+[2025-11-05T13:01:42.023Z] ✅ SUCCESS: zepto_sheets.js
+[2025-11-05T13:01:42.025Z] STARTING: populate_benchmarks.js
+[2025-11-05T13:01:55.378Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-11-05T13:01:55.380Z] FULL PIPELINE SUCCESS
+[2025-11-05T13:01:55.519Z] PIPELINE STARTED
+[2025-11-05T13:01:55.519Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:01:55.527Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:01:55.528Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:01:55.528Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:02:05.664Z] PIPELINE STARTED
+[2025-11-05T13:02:05.664Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:02:05.673Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:02:05.673Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:02:05.674Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:02:15.828Z] PIPELINE STARTED
+[2025-11-05T13:02:15.828Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:02:15.837Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:02:15.838Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:02:15.838Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:02:25.994Z] PIPELINE STARTED
+[2025-11-05T13:02:25.995Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:02:26.003Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:02:26.003Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:02:26.004Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:02:36.162Z] PIPELINE STARTED
+[2025-11-05T13:02:36.162Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:02:36.172Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:02:36.172Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:02:36.172Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:02:46.338Z] PIPELINE STARTED
+[2025-11-05T13:02:46.339Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:02:46.350Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:02:46.350Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:02:46.350Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:02:56.469Z] PIPELINE STARTED
+[2025-11-05T13:02:56.470Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:02:56.478Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:02:56.478Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:02:56.478Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:03:06.587Z] PIPELINE STARTED
+[2025-11-05T13:03:06.588Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:03:06.596Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:03:06.596Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:03:06.596Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:03:16.933Z] PIPELINE STARTED
+[2025-11-05T13:03:16.934Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:03:16.943Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:03:16.944Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:03:16.944Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:03:27.090Z] PIPELINE STARTED
+[2025-11-05T13:03:27.091Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:03:27.098Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:03:27.098Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:03:27.099Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:03:37.217Z] PIPELINE STARTED
+[2025-11-05T13:03:37.218Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:03:37.229Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:03:37.229Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:03:37.230Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:03:47.332Z] PIPELINE STARTED
+[2025-11-05T13:03:47.332Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:03:47.339Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:03:47.339Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:03:47.339Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:03:57.472Z] PIPELINE STARTED
+[2025-11-05T13:03:57.472Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:03:57.485Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:03:57.486Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:03:57.486Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:04:07.588Z] PIPELINE STARTED
+[2025-11-05T13:04:07.589Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:04:07.595Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:04:07.595Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:04:07.596Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:04:17.699Z] PIPELINE STARTED
+[2025-11-05T13:04:17.699Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:04:17.706Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:04:17.706Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:04:17.707Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:04:27.807Z] PIPELINE STARTED
+[2025-11-05T13:04:27.807Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:04:27.813Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:04:27.814Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:04:27.814Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:04:37.916Z] PIPELINE STARTED
+[2025-11-05T13:04:37.917Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:04:37.923Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:04:37.923Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:04:37.924Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:04:48.037Z] PIPELINE STARTED
+[2025-11-05T13:04:48.038Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:04:48.047Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:04:48.047Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:04:48.047Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:04:58.303Z] PIPELINE STARTED
+[2025-11-05T13:04:58.304Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:04:58.345Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:04:58.345Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:04:58.345Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:05:08.449Z] PIPELINE STARTED
+[2025-11-05T13:05:08.449Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:05:08.456Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:05:08.456Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:05:08.457Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:05:18.635Z] PIPELINE STARTED
+[2025-11-05T13:05:18.636Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:05:18.644Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:05:18.645Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:05:18.645Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:05:28.759Z] PIPELINE STARTED
+[2025-11-05T13:05:28.760Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:05:28.768Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:05:28.769Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:05:28.769Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:05:38.880Z] PIPELINE STARTED
+[2025-11-05T13:05:38.881Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:05:38.890Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:05:38.890Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:05:38.890Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:05:49.129Z] PIPELINE STARTED
+[2025-11-05T13:05:49.130Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:05:49.143Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:05:49.143Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:05:49.145Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:05:59.293Z] PIPELINE STARTED
+[2025-11-05T13:05:59.293Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:05:59.309Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:05:59.309Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:05:59.310Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:06:09.417Z] PIPELINE STARTED
+[2025-11-05T13:06:09.418Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:06:09.425Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:06:09.425Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:06:09.425Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:06:19.716Z] PIPELINE STARTED
+[2025-11-05T13:06:19.717Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:06:19.726Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:06:19.727Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:06:19.727Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:06:29.828Z] PIPELINE STARTED
+[2025-11-05T13:06:29.828Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:06:29.834Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:06:29.834Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:06:29.835Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:06:39.941Z] PIPELINE STARTED
+[2025-11-05T13:06:39.941Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:06:39.947Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:06:39.947Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:06:39.948Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:06:50.049Z] PIPELINE STARTED
+[2025-11-05T13:06:50.049Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:06:50.056Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:06:50.056Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:06:50.057Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:07:00.167Z] PIPELINE STARTED
+[2025-11-05T13:07:00.167Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:07:00.174Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:07:00.175Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:07:00.175Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:07:10.279Z] PIPELINE STARTED
+[2025-11-05T13:07:10.280Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:07:10.286Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:07:10.286Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:07:10.287Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:07:20.390Z] PIPELINE STARTED
+[2025-11-05T13:07:20.391Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:07:20.398Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:07:20.398Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:07:20.398Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:07:30.500Z] PIPELINE STARTED
+[2025-11-05T13:07:30.500Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:07:30.507Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:07:30.507Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:07:30.507Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:07:40.629Z] PIPELINE STARTED
+[2025-11-05T13:07:40.629Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:07:40.636Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:07:40.636Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:07:40.637Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:07:50.740Z] PIPELINE STARTED
+[2025-11-05T13:07:50.740Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:07:50.746Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:07:50.746Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:07:50.747Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:08:00.850Z] PIPELINE STARTED
+[2025-11-05T13:08:00.850Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:08:00.857Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:08:00.857Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:08:00.858Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:08:10.957Z] PIPELINE STARTED
+[2025-11-05T13:08:10.958Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:08:10.964Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:08:10.964Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:08:10.965Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:08:21.075Z] PIPELINE STARTED
+[2025-11-05T13:08:21.075Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:08:21.082Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:08:21.082Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:08:21.082Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:08:31.174Z] PIPELINE STARTED
+[2025-11-05T13:08:31.175Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:08:31.181Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:08:31.181Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:08:31.181Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:08:41.275Z] PIPELINE STARTED
+[2025-11-05T13:08:41.275Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:08:41.281Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:08:41.281Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:08:41.282Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:08:51.377Z] PIPELINE STARTED
+[2025-11-05T13:08:51.379Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:08:51.385Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:08:51.386Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:08:51.386Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:09:01.527Z] PIPELINE STARTED
+[2025-11-05T13:09:01.527Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:09:01.536Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:09:01.536Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:09:01.537Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:09:11.641Z] PIPELINE STARTED
+[2025-11-05T13:09:11.641Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:09:11.647Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:09:11.648Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:09:11.648Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:09:21.760Z] PIPELINE STARTED
+[2025-11-05T13:09:21.761Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:09:21.769Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:09:21.769Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:09:21.770Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:09:31.867Z] PIPELINE STARTED
+[2025-11-05T13:09:31.868Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:09:31.874Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:09:31.874Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:09:31.875Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:09:41.991Z] PIPELINE STARTED
+[2025-11-05T13:09:41.998Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:09:42.005Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:09:42.005Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:09:42.006Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:09:52.107Z] PIPELINE STARTED
+[2025-11-05T13:09:52.108Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:09:52.114Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:09:52.114Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:09:52.115Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:10:02.218Z] PIPELINE STARTED
+[2025-11-05T13:10:02.218Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:10:02.225Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:10:02.225Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:10:02.226Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:10:12.339Z] PIPELINE STARTED
+[2025-11-05T13:10:12.339Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:10:12.348Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:10:12.348Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:10:12.348Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:10:22.453Z] PIPELINE STARTED
+[2025-11-05T13:10:22.454Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:10:22.460Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:10:22.460Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:10:22.461Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:10:32.578Z] PIPELINE STARTED
+[2025-11-05T13:10:32.578Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:10:32.587Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:10:32.587Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:10:32.587Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:10:42.704Z] PIPELINE STARTED
+[2025-11-05T13:10:42.705Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:10:42.713Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:10:42.713Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:10:42.713Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:10:52.822Z] PIPELINE STARTED
+[2025-11-05T13:10:52.823Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:10:52.830Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:10:52.831Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:10:52.831Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:11:02.929Z] PIPELINE STARTED
+[2025-11-05T13:11:02.929Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:11:02.935Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:11:02.936Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:11:02.936Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:11:13.039Z] PIPELINE STARTED
+[2025-11-05T13:11:13.040Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:11:13.046Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:11:13.047Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:11:13.047Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:11:23.151Z] PIPELINE STARTED
+[2025-11-05T13:11:23.151Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:11:23.159Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:11:23.159Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:11:23.160Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:11:33.269Z] PIPELINE STARTED
+[2025-11-05T13:11:33.269Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:11:33.276Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:11:33.277Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:11:33.277Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:11:43.377Z] PIPELINE STARTED
+[2025-11-05T13:11:43.378Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:11:43.384Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:11:43.384Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:11:43.385Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:11:53.504Z] PIPELINE STARTED
+[2025-11-05T13:11:53.505Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:11:53.537Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:11:53.560Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:11:53.592Z] PIPELINE STOPPED at blinkit_sheets.js
+[2025-11-05T13:12:03.782Z] PIPELINE STARTED
+[2025-11-05T13:12:03.788Z] STARTING: blinkit_sheets.js
+[2025-11-05T13:12:03.834Z] FAILED: blinkit_sheets.js
+[2025-11-05T13:12:03.834Z] ERROR: Command failed: node blinkit_sheets.js
+/bin/sh: node: command not found
+
+[2025-11-05T13:12:03.865Z] PIPELINE STOPPED at blinkit_sheets.js

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "firebase-admin": "^13.5.0",
+    "google-spreadsheet": "^5.0.2",
+    "googleapis": "^164.0.0",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^24.25.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

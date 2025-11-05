@@ -1,0 +1,162 @@
+[
+  {
+    "name": "__cf_bm",
+    "value": "NlKPd4gotXOBkaEv.VsEUUcDFawNxyXG9E9KXWjCgqA-1761203662-1.0.1.1-v_znKoL6NHfan6Zthm2DgiJ0mFhkLxs.t8k.w2Tqh1lnPmkOkFRZY1V.GrGpEIFKwcpn2jAHoDHJGPbsTr.yBfn_YAJt4oPB.NkCOq2Vea4",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": 1761203662.134,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "__cf_bm",
+    "value": "iKJ16FSsXf981CebNCYXTWXs.jRJV55NSpmGYRLkgWE-1761203662-1.0.1.1-3vw_Tr5xa5E6ePfjx8xZ_vOcA3QTFcwsLl4xprbUsqlAXoWj.GGCet03C2ZVSyjbhb.H1PrVAFWjOUyLtV9GmAH6uMoFVz09HaG0U2Anjwk",
+    "domain": ".grofers.com",
+    "path": "/",
+    "expires": 1761203662.279,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "__cfruid",
+    "value": "1a4f0debe53a5a26d349da055f33579d43fe1781-1761203674",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "__cfruid",
+    "value": "a0081b8dd34ed4c24f1e24cc08a5b2c152059bb9-1761203662",
+    "domain": ".grofers.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_cfuvid",
+    "value": "KYkekb18CdmwdcrGfsdeJ_dlQpyHcVCksixRaeKLlXY-1761203674746-0.0.1.1-604800000",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_cfuvid",
+    "value": "Qih5Lh8Ed1yopgLoavzyY.PFWKeskirFhvod..tevoU-1761203662362-0.0.1.1-604800000",
+    "domain": ".grofers.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.1848904480.1747048286",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": 1792739520.597,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_ga_DDJ0134H6Z",
+    "value": "GS2.2.s1761202527$o24$g1$t1761203520$j52$l0$h0",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": 1792739520.643,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_ga_JSMJG966C7",
+    "value": "GS2.1.s1761202528$o27$g1$t1761203520$j48$l0$h0",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": 1792739520.649,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1651697234.1755502197",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": 1769292597,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.704533220.1761132374",
+    "domain": ".blinkit.com",
+    "path": "/",
+    "expires": 1761291120,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "ar_debug",
+    "value": "1",
+    "domain": ".www.google-analytics.com",
+    "path": "/",
+    "expires": 1766398272.827,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "gr_1_deviceId",
+    "value": "2b6281af-51e3-4103-b89a-80bb03f3fd7e",
+    "domain": "blinkit.com",
+    "path": "/",
+    "expires": 1761808311.209,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "gr_1_landmark",
+    "value": "undefined",
+    "domain": "blinkit.com",
+    "path": "/",
+    "expires": 1761808311.210,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "gr_1_lat",
+    "value": "12.9090809",
+    "domain": "blinkit.com",
+    "path": "/",
+    "expires": 1761808311.210,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "gr_1_locality",
+    "value": "3",
+    "domain": "blinkit.com",
+    "path": "/",
+    "expires": 1761808311.209,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "gr_1_lon",
+    "value": "77.6461035",
+    "domain": "blinkit.com",
+    "path": "/",
+    "expires": 1761808311.210,
+    "httpOnly": false,
+    "secure": false
+  }
+]

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmarks - PricePulse</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+    :root {
+        --glow-purple: 0 0 20px rgba(102, 126, 234, 0.6);
+        --glow-indigo: 0 0 20px rgba(99, 102, 241, 0.4);
+    }
+    body { 
+        background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+        overflow-x: hidden;
+    }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .table-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .input-glow:focus { box-shadow: var(--glow-indigo); }
+    .saving { background: #10b981 !important; }
+    .single-platform { background: rgba(254, 243, 199, 0.2) !important; }
+    .no-input { background: rgba(243, 244, 246, 0.1) !important; color: #9ca3af !important; cursor: not-allowed !important; }
+    .readonly-input { background: rgba(249, 250, 251, 0.1); color: #f1f5f9; cursor: default; }
+    .locked-input { background: rgba(239, 68, 68, 0.1) !important; color: #fca5a5 !important; cursor: not-allowed !important; }
+    .btn-refresh {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    .btn-refresh::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+    }
+    .btn-refresh:hover::before { left: 100%; }
+    .btn-refresh:hover { transform: scale(1.05); box-shadow: var(--glow-indigo); }
+    .fadeInUp { animation: fadeInUp 0.8s ease-out; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .modal-enter { animation: modalEnter 0.3s ease-out; }
+    @keyframes modalEnter { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+    @media (max-width: 768px) { .table-card { backdrop-filter: blur(10px); } }
+    </style>
+</head>
+<body>    
+<div id="passwordModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+    <div class="bg-white backdrop-blur-xl rounded-2xl p-8 w-full max-w-md border border-white/20 modal-enter">
+        <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <img src="copyright.png" alt="Copyright Logo" class="w-12 h-12">
+            </div>
+            <h3 class="text-2xl font-bold text-indigo-600 mb-2">Admin Access</h3>
+            <p class="text-gray-600">Enter password to edit benchmarks</p>
+        </div>
+        <input type="password" id="passwordInput" placeholder="• • • • • •" 
+               class="w-full p-4 bg-white/30 border border-white/30 rounded-xl text-indigo-600 text-center text-2xl font-bold focus:ring-2 focus:ring-indigo-500">
+        <div class="flex gap-3 mt-6">
+            <button onclick="checkPassword()" class="flex-1 bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition">
+                Enter
+            </button>
+            <button onclick="closeModal()" class="flex-1 bg-gray-600 text-white py-3 rounded-xl font-semibold hover:bg-gray-700 transition">
+                Cancel
+            </button>
+        </div>
+        <p class="text-xs text-gray-400 mt-4 text-center">5-minute session • Auto-logout</p>
+    </div>
+</div>
+
+<header class="gradient-bg text-white shadow-2xl relative z-10">
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center animate-pulse">
+                    <i data-feather="dollar-sign" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold">PricePulse</h1>
+                    <p class="text-indigo-100">Smart Price Tracking</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="/" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Home</a></li>
+                    <li><a href="chumbak_blinkit.html" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Blinkit</a></li>
+                    <li><a href="chumbak_swiggy.html" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Swiggy</a></li>
+                    <li><a href="chumbak_zepto.html" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Zepto</a></li>
+                    <li><a href="chumbak_benchmarks.html" class="bg-white text-indigo-600 px-3 py-1 rounded font-semibold">Benchmarks</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- ⭐ STICKY DARK BUTTONS - LOCKED BY DEFAULT ⭐ -->
+<div id="controlBar" class="sticky top-0 w-full bg-black/50 backdrop-blur-sm z-50 py-4 flex justify-center space-x-4 shadow-2xl hidden">
+    <button onclick="saveAll()" id="saveBtn" class="btn-refresh text-white px-8 py-3 rounded-xl font-semibold">
+        Save All to Sheets
+    </button>
+    <button onclick="clearAllBenchmarks()" class="btn-refresh text-white px-8 py-3 rounded-xl font-semibold">
+        Clear All Benchmarks
+    </button>
+    <button onclick="logout()" class="btn-refresh text-white px-8 py-3 rounded-xl font-semibold">
+        Logout
+    </button>
+</div>
+
+<main class="container mx-auto px-4 py-12 relative z-10">
+    <div class="text-center mb-12 fadeInUp">
+        <h2 class="text-4xl font-bold text-white mb-4">Set Price Benchmarks</h2>
+        <p class="text-xl text-gray-300">Admin-only access • <span id="accessStatus" class="text-yellow-400 font-semibold">🔒 LOGIN REQUIRED</span></p>
+    </div>
+
+    <!-- Status -->
+    <div id="status" class="bg-green-500/20 text-green-400 p-4 rounded-xl mb-6 hidden border border-green-500/30">
+        ✅ Saved to Google Sheets!
+    </div>
+
+    <!-- ⭐ TABLE - HIDDEN BY DEFAULT ⭐ -->
+    <div class="table-card rounded-2xl overflow-hidden fadeInUp hidden" id="tableContainer" style="animation-delay: 0.2s">
+        <div class="overflow-x-auto">
+            <table class="min-w-full">
+                <thead class="bg-white/5">
+                    <tr>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Product</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Blinkit</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Swiggy</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Zepto</th>
+                        <th class="px-6 py-4 text-center text-xs font-semibold text-gray-300 uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="benchmarksTable" class="divide-y divide-white/10">
+                    <!-- Products loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ⭐ UNLOCK BUTTON - ALWAYS VISIBLE ⭐ -->
+    <div class="text-center mt-8 fadeInUp">
+        <button onclick="showPasswordModal()" id="unlockButton" class="btn-refresh text-white px-12 py-4 rounded-xl font-bold text-lg">
+            🔓 UNLOCK EDITING
+        </button>
+    </div>
+</main>
+
+<footer class="bg-gray-900/50 backdrop-blur-sm text-indigo-600 py-12 mt-12 relative z-10 border-t border-white/10">
+    <div class="container mx-auto px-4 text-center">
+        <div class="flex justify-center items-center space-x-6 mb-6">
+            <i data-feather="dollar-sign" class="w-8 h-8 text-indigo-400"></i>
+            <h3 class="text-2xl font-bold">PricePulse</h3>
+        </div>
+        <p class="text-gray-400 mb-4">© 2025 PricePulse - Live Google Sheets Sync</p>
+        <p class="text-sm text-gray-500">Smart Price Monitoring Tool</p>
+    </div>
+</footer>
+
+<script>
+let benchmarks = [];
+let platformAvailability = {};
+let isAdmin = false;
+let sessionTimer;
+const SHEET_ID = '1HVALKEqNso9dXiy-qC4NyXhDFAgi66KDPuRepmEjVX0';
+const PASSWORD = 'chumbak123'; // ⭐ CHANGE THIS! ⭐
+
+function showPasswordModal() {
+    document.getElementById('passwordModal').classList.remove('hidden');
+    document.getElementById('passwordInput').focus();
+}
+
+function closeModal() {
+    document.getElementById('passwordModal').classList.add('hidden');
+    document.getElementById('passwordInput').value = '';
+}
+
+function checkPassword() {
+    const input = document.getElementById('passwordInput').value;
+    if (input === PASSWORD) {
+        closeModal();
+        loginAdmin();
+    } else {
+        document.getElementById('passwordInput').style.borderColor = '#ef4444';
+        setTimeout(() => document.getElementById('passwordInput').style.borderColor = '', 1000);
+    }
+}
+
+function loginAdmin() {
+    isAdmin = true;
+    document.getElementById('controlBar').classList.remove('hidden');
+    document.getElementById('accessStatus').textContent = 'ADMIN MODE ACTIVE';
+    document.getElementById('accessStatus').className = 'text-green-400 font-semibold';
+    document.getElementById('unlockButton').classList.add('hidden');
+    document.getElementById('tableContainer').classList.remove('hidden');
+    displayTable(); // ⭐ FIXED: NOW SHOWS TABLE! ⭐
+    startSessionTimer();
+}
+
+function logout() {
+    isAdmin = false;
+    clearTimeout(sessionTimer);
+    document.getElementById('controlBar').classList.add('hidden');
+    document.getElementById('accessStatus').textContent = '🔒 LOGIN REQUIRED';
+    document.getElementById('accessStatus').className = 'text-yellow-400 font-semibold';
+    document.getElementById('unlockButton').classList.remove('hidden');
+    document.getElementById('tableContainer').classList.add('hidden');
+}
+
+function startSessionTimer() {
+    clearTimeout(sessionTimer);
+    sessionTimer = setTimeout(logout, 300000); // 5 minutes
+}
+
+async function loadData() {
+    try {
+        const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=benchmarks`);
+        const csv = await res.text();
+        const data = parseCSV(csv);
+
+        benchmarks = data.slice(1).map(row => ({
+            name: row[0],
+            blinkit: row[1] === '' ? '' : parseFloat(row[1]),
+            swiggy: row[2] === '' ? '' : parseFloat(row[2]),
+            zepto: row[3] === '' ? '' : parseFloat(row[3])
+        })).filter(p => p.name);
+
+        await loadPlatformAvailability();
+        console.log('✅ Loaded', benchmarks.length, 'benchmarks');
+    } catch (error) {
+        console.error('❌ Load error:', error);
+    }
+}
+
+async function loadPlatformAvailability() {
+    const platforms = [
+        { name: 'blinkit', sheet: 'blinkit' },
+        { name: 'swiggy', sheet: 'instamart' },
+        { name: 'zepto', sheet: 'zepto' }
+    ];
+
+    platformAvailability = {};
+    for (const plat of platforms) {
+        const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${plat.sheet}`);
+        const csv = await res.text();
+        const data = parseCSV(csv);
+        const products = data.slice(1).map(row => row[0]).filter(name => name);
+        platformAvailability[plat.name] = new Set(products);
+    }
+}
+
+function parseCSV(csv) {
+    return csv.split('\n').filter(line => line.trim())
+        .map(line => line.split(',').map(cell => cell.replace(/"/g, '').trim()));
+}
+
+function displayTable() {
+    const tbody = document.getElementById('benchmarksTable');
+    tbody.innerHTML = benchmarks.map((product, index) => {
+        const activeCount = [product.blinkit, product.swiggy, product.zepto].filter(p => p !== '' && p !== null).length;
+        const isSinglePlatform = activeCount === 1;
+
+        return `
+        <tr class="hover:bg-white/5 transition-colors ${isSinglePlatform ? 'single-platform' : ''}">
+    <td class="px-6 py-4">
+        <textarea readonly rows="2" 
+                  class="w-full p-3 border border-white/30 rounded-xl input-glow resize-none readonly-input text-indigo-600">${product.name}</textarea>
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap">
+        ${platformAvailability.blinkit.has(product.name) ?
+            `<input type="number" value="${product.blinkit || ''}" 
+                   ${isAdmin ? `onchange="benchmarks[${index}].blinkit=this.value ? parseFloat(this.value) : ''; startSessionTimer()"` : 'readonly'}
+                   placeholder="—" class="w-24 p-3 border border-white/30 rounded-xl input-glow text-center text-indigo-600 bg-white/5 ${!isAdmin ? 'locked-input' : ''}">` :
+            `<input type="number" value="" disabled class="w-24 p-3 border rounded-xl no-input text-center" placeholder="—">`
+        }
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap">
+        ${platformAvailability.swiggy.has(product.name) ?
+            `<input type="number" value="${product.swiggy || ''}" 
+                   ${isAdmin ? `onchange="benchmarks[${index}].swiggy=this.value ? parseFloat(this.value) : ''; startSessionTimer()"` : 'readonly'}
+                   placeholder="—" class="w-24 p-3 border border-white/30 rounded-xl input-glow text-center text-indigo-600 bg-white/5 ${!isAdmin ? 'locked-input' : ''}">` :
+            `<input type="number" value="" disabled class="w-24 p-3 border rounded-xl no-input text-center" placeholder="—">`
+        }
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap">
+        ${platformAvailability.zepto.has(product.name) ?
+            `<input type="number" value="${product.zepto || ''}" 
+                   ${isAdmin ? `onchange="benchmarks[${index}].zepto=this.value ? parseFloat(this.value) : ''; startSessionTimer()"` : 'readonly'}
+                   placeholder="—" class="w-24 p-3 border border-white/30 rounded-xl input-glow text-center text-indigo-600 bg-white/5 ${!isAdmin ? 'locked-input' : ''}">` :
+            `<input type="number" value="" disabled class="w-24 p-3 border rounded-xl no-input text-center" placeholder="—">`
+        }
+    </td>
+    <td class="px-6 py-4 text-center">
+        ${isAdmin ?
+            `<button onclick="deleteProduct(${index})" class="text-red-400 hover:text-red-300 p-2 rounded-full hover:bg-red-500/20 transition-all">
+                <i data-feather="trash-2" class="w-5 h-5"></i>
+            </button>` :
+            `<i data-feather="lock" class="w-5 h-5 text-red-400"></i>`
+        }
+    </td>
+</tr>
+`;
+    }).join('');
+    feather.replace();
+}
+
+function deleteProduct(index) {
+    if (confirm('Delete this benchmark?')) {
+        benchmarks.splice(index, 1);
+        displayTable();
+        saveAll();
+    }
+}
+
+function clearAllBenchmarks() {
+    if (confirm('Are you sure you want to clear all benchmarks?')) {
+        benchmarks.forEach(p => p.blinkit = p.swiggy = p.zepto = '');
+        displayTable();
+        saveAll();
+    }
+}
+
+async function saveAll() {
+    const csv = [
+        ['Name', 'Blinkit', 'Swiggy', 'Zepto'],
+        ...benchmarks.map(p => [p.name, p.blinkit || '', p.swiggy || '', p.zepto || ''])
+    ].map(row => row.join(',')).join('\n');
+
+    document.getElementById('saveBtn').innerHTML = '⏳ Saving...';
+    const response = await fetch('/api/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ csv })
+    });
+    const result = await response.json();
+    if (result.status === 'success') {
+        document.getElementById('saveBtn').innerHTML = '✅ Saved!';
+        document.getElementById('status').classList.remove('hidden');
+        setTimeout(() => {
+            document.getElementById('saveBtn').innerHTML = 'Save All to Sheets';
+            document.getElementById('status').classList.add('hidden');
+        }, 2000);
+    } else {
+        alert('❌ Save failed: ' + (result.message || 'Unknown error'));
+        document.getElementById('saveBtn').innerHTML = 'Save All to Sheets';
+    }
+}
+
+document.getElementById('passwordInput').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') checkPassword();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    feather.replace();
+    loadData();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/bin/bash: /Users/mac/documents/pricepulsesite/run_scrapers_safe.sh: Operation not permitted
+/bin/bash: /Users/mac/documents/pricepulsesite/run_scrapers_safe.sh: Operation not permitted
+==================================================
+RUN STARTED: 2025-11-05 17:53:33 IST
+==================================================
+/Users/mac/documents/pricepulsesite/run_scrapers_safe.sh: line 14: timeout: command not found
+SCRIPT FINISHED (CODE: 127)
+==================================================
+RUN FINISHED: 2025-11-05 17:53:33 IST
+==================================================
+
+==================================================
+RUN STARTED: 2025-11-05 17:53:44 IST
+==================================================
+/Users/mac/documents/pricepulsesite/run_scrapers_safe.sh: line 14: timeout: command not found
+SCRIPT FINISHED (CODE: 127)
+==================================================
+RUN FINISHED: 2025-11-05 17:53:44 IST
+==================================================
+
+==================================================
+RUN STARTED: 2025-11-05 17:55:16 IST
+==================================================
+/Users/mac/documents/pricepulsesite/run_scrapers_safe.sh: line 14: /usr/bin/timeout: No such file or directory
+SCRIPT FINISHED (CODE: 127)
+==================================================
+RUN FINISHED: 2025-11-05 17:55:16 IST
+==================================================
+
+==================================================
+RUN STARTED: 2025-11-05 17:59:04 IST
+==================================================
+
+PRICEPULSE SCRAPER PIPELINE STARTED
+==================================================
+
+[2025-11-05T12:29:08.741Z] PIPELINE STARTED
+
+[1/4] Running: blinkit_sheets.js
+[2025-11-05T12:29:08.743Z] STARTING: blinkit_sheets.js
+/bin/sh: node: command not found
+[2025-11-05T12:29:08.750Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:29:08.751Z] ERROR: Command failed: node blinkit_sheets.js
+
+PIPELINE STOPPED! blinkit_sheets.js FAILED
+[2025-11-05T12:29:08.752Z] PIPELINE STOPPED at blinkit_sheets.js
+SCRIPT FINISHED (CODE: 1)
+==================================================
+RUN FINISHED: 2025-11-05 17:59:08 IST
+==================================================
+
+==================================================
+RUN STARTED: 2025-11-05 18:02:28 IST
+==================================================
+
+PRICEPULSE SCRAPER PIPELINE STARTED
+==================================================
+
+[2025-11-05T12:32:29.091Z] PIPELINE STARTED
+
+[1/4] Running: blinkit_sheets.js
+[2025-11-05T12:32:29.093Z] STARTING: blinkit_sheets.js
+/bin/sh: node: command not found
+[2025-11-05T12:32:29.103Z] FAILED: blinkit_sheets.js
+[2025-11-05T12:32:29.103Z] ERROR: Command failed: node blinkit_sheets.js
+
+PIPELINE STOPPED! blinkit_sheets.js FAILED
+[2025-11-05T12:32:29.104Z] PIPELINE STOPPED at blinkit_sheets.js
+SCRIPT FINISHED (CODE: 1)
+==================================================
+RUN FINISHED: 2025-11-05 18:02:29 IST
+==================================================
+
+/bin/bash: /Users/mac/documents/pricepulsesite/run_scrapers_safe.sh: No such file or directory
+/bin/bash: /Users/mac/documents/pricepulsesite/run_scrapers_safe.sh: No such file or directory

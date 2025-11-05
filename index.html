@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PricePulse - Product Price Comparator</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+    :root {
+        --glow-purple: 0 0 20px rgba(102, 126, 234, 0.6);
+        --glow-indigo: 0 0 20px rgba(99, 102, 241, 0.4);
+    }
+    
+    body { 
+        background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
+    
+    .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .card-glow {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .card-glow:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: var(--glow-purple), 0 30px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .platform-card {
+        animation: float 6s ease-in-out infinite;
+        pointer-events: none;
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    
+    .platform-card.enabled {
+        pointer-events: auto;
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    .platform-card:nth-child(1) { animation-delay: 0s; }
+    .platform-card:nth-child(2) { animation-delay: 2s; }
+    .platform-card:nth-child(3) { animation-delay: 4s; }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    .feature-icon {
+        animation: pulse-glow 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 5px currentColor; }
+        50% { box-shadow: 0 0 30px currentColor; }
+    }
+    
+    .hero-text {
+        animation: slideInUp 1s ease-out;
+    }
+    
+    .cta-button {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .cta-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+    }
+    
+    .cta-button:hover::before {
+        left: 100%;
+    }
+    
+    .cta-button:hover {
+        transform: scale(1.05);
+        box-shadow: var(--glow-indigo);
+    }
+    
+    .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: rgba(102, 126, 234, 0.6);
+        border-radius: 50%;
+        animation: floatParticle 20s linear infinite;
+    }
+    
+    @keyframes floatParticle {
+        0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+    }
+
+    /* ==== LOGO: GLOW AROUND SHAPE ==== */
+    .logo-glow {
+        filter: 
+            invert(1) 
+            brightness(1.8) 
+            drop-shadow(0 0 8px rgba(147, 51, 234, 0.6));
+        animation: breatheGlow 2s ease-in-out infinite;
+        transition: transform 0.3s ease;
+    }
+
+    .logo-glow:hover {
+        transform: scale(1.1);
+        animation-duration: 1.2s;
+    }
+
+    @keyframes breatheGlow {
+        0%, 100% {
+            filter: 
+                invert(1) 
+                brightness(1.8) 
+                drop-shadow(0 0 8px rgba(147, 51, 234, 0.6));
+        }
+        50% {
+            filter: 
+                invert(1) 
+                brightness(1.8) 
+                drop-shadow(0 0 20px rgba(147, 51, 234, 0.9));
+        }
+    }
+
+    /* ==== BRAND BUTTONS ==== */
+    .brand-card {
+        @apply w-full max-w-md mx-auto p-6 rounded-2xl cursor-pointer transition-all duration-400;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .brand-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: var(--glow-purple), 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .brand-card.active {
+        background: linear-gradient(135deg, #9333ea, #6366f1);
+        border: 1px solid rgba(147, 51, 234, 0.8);
+        box-shadow: 0 0 30px rgba(147, 51, 234, 0.6);
+        transform: translateY(-6px) scale(1.03);
+    }
+
+    .brand-logo {
+        @apply w-16 h-16 rounded-xl flex items-center justify-center;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .brand-name {
+        @apply text-2xl font-bold text-white;
+    }
+
+    /* Force black logos to white */
+    .filter-white {
+        filter: brightness(0) invert(1);
+    }
+
+    /* Toast */
+    #toast {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(239, 68, 68, 0.95);
+        color: white;
+        padding: 14px 28px;
+        border-radius: 16px;
+        font-weight: 600;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        font-size: 1rem;
+    }
+    #toast.show {
+        opacityhit: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    </style>
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-2xl relative z-10">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center animate-pulse">
+                        <i data-feather="dollar-sign" class="w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold">PricePulse</h1>
+                        <p class="text-indigo-100">Smart Price Tracking</p>
+                    </div>
+                </div>
+
+                <a class="flex items-center">
+                    <img src="/copyright.png" alt="PricePulse Logo" class="logo-glow h-12 md:h-16">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-8 relative z-10">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold text-white mb-4 hero-text">Monitor Prices the Smart Way</h2>
+            <p class="text-lg text-gray-300 mb-6 max-w-3xl mx-auto">Compare prices across Blinkit, Instamart, and Zepto in real-time!</p>
+        </div>
+    </section>
+
+   <!-- Brand Selector -->
+<section class="py-8 relative z-10">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-white mb-6 tracking-wide">Select Your Brand</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+      <!-- Pepe Jeans -->
+      <div
+        class="brand-card group cursor-pointer rounded-2xl px-6 py-4 bg-white/5 backdrop-blur-lg border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(102,126,234,0.4)] flex items-center justify-center space-x-4"
+        data-brand="pepe"
+      >
+        <div class="brand-logo w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 shadow-lg flex items-center justify-center">
+          <img src="/pepelogo.png" alt="Pepe Jeans" class="w-10 h-10 object-contain scale-125 filter-white" />
+        </div>
+        <h4 class="brand-name text-xl font-semibold text-white group-hover:text-indigo-300 transition-colors">
+          Pepe Jeans
+        </h4>
+      </div>
+
+      <!-- Chumbak -->
+      <div
+        class="brand-card group cursor-pointer rounded-2xl px-6 py-4 bg-white/5 backdrop-blur-lg border border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(244,114,182,0.4)] flex items-center justify-center space-x-4"
+        data-brand="chumbak"
+      >
+        <div class="brand-logo w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-yellow-400 shadow-lg flex items-center justify-center">
+          <img src="/chumbaklogo.png" alt="Chumbak" class="w-10 h-10 object-contain scale-125 filter-white" />
+        </div>
+        <h4 class="brand-name text-xl font-semibold text-white group-hover:text-pink-300 transition-colors">
+          Chumbak
+        </h4>
+      </div>
+    </div>
+
+    <p id="brand-status" class="text-center text-lg text-gray-300 mt-6 italic">No brand selected</p>
+  </div>
+</section>
+
+
+    <!-- Platforms Grid -->
+    <section class="py-8 relative z-10">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-white mb-8 animate-fadeIn">Choose Your Platform</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Blinkit -->
+                <a href="#" class="platform-card card-glow rounded-2xl overflow-hidden" data-platform="blinkit">
+                    <div class="p-6 text-center">
+                        <div class="w-20 h-20 bg-indigo-500/20 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-indigo-500/30">
+                            <img src="/Blinkit-yellow-rounded.svg" alt="Blinkit" class="w-16 h-16">
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Blinkit</h4>
+                        <div class="bg-indigo-500/20 text-indigo-300 px-4 py-1.5 rounded-full text-sm font-semibold inline-block border border-indigo-500/30">
+                            View Products
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Swiggy -->
+                <a href="#" class="platform-card card-glow rounded-2xl overflow-hidden" data-platform="swiggy">
+                    <div class="p-6 text-center">
+                        <div class="w-20 h-20 bg-red-500/20 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-red-500/30">
+                            <img src="/instamart_logo.webp" alt="Swiggy" class="w-16 h-16">
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Swiggy</h4>
+                        <div class="bg-red-500/20 text-red-300 px-4 py-1.5 rounded-full text-sm font-semibold inline-block border border-red-500/30">
+                            View Products
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Zepto -->
+                <a href="#" class="platform-card card-glow rounded-2xl overflow-hidden" data-platform="zepto">
+                    <div class="p-6 text-center">
+                        <div class="w-20 h-20 bg-green-500/20 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-green-500/30">
+                            <img src="/zeptologo.webp" alt="Zepto" class="w-16 h-16">
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Zepto</h4>
+                        <div class="bg-green-500/20 text-green-300 px-4 py-1.5 rounded-full text-sm font-semibold inline-block border border-green-500/30">
+                            View Products
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 relative z-10 bg-black/20">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-white mb-12">Why PricePulse?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center animate-fadeInUp">
+                    <div class="w-16 h-16 bg-indigo-500/20 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-indigo-500/30 feature-icon" style="color: #667eea;">
+                        <i data-feather="refresh-cw" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-white mb-2">Real-Time Updates</h4>
+                    <p class="text-gray-300">Prices refresh every 4 hours</p>
+                </div>
+                <div class="text-center animate-fadeInUp animation-delay-200">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-green-500/30 feature-icon" style="color: #10b981;">
+                        <i data-feather="target" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-white mb-2">Smart Benchmarks</h4>
+                    <p class="text-gray-300">Set your target prices</p>
+                </div>
+                <div class="text-center animate-fadeInUp animation-delay-400">
+                    <div class="w-16 h-16 bg-yellow-500/20 rounded-2xl mx-auto mb-4 flex items-center justify-center border border-yellow-500/30 feature-icon" style="color: #f59e0b;">
+                        <i data-feather="search" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold text-white mb-2">Instant Search</h4>
+                    <p class="text-gray-300">Find products in seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benchmarks CTA -->
+    <section class="py-16 gradient-bg relative z-10">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-6 text-white">Set Your Price Targets</h3>
+            <p class="text-lg mb-1 max-w-2xl mx-auto text-indigo-100">Manage benchmarks across all platforms and get notified when prices drop below your target!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/50 backdrop-blur-sm text-white py-10 relative z-10 border-t border-white/10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center items-center space-x-6 mb-4">
+                <i data-feather="dollar-sign" class="w-8 h-8 text-indigo-400"></i>
+                <h3 class="text-2xl font-bold">PricePulse</h3>
+            </div>
+            <p class="text-gray-400 mb-2">© 2025 PricePulse - The Ultimate Price Monitoring Tool</p>
+            <p class="text-sm text-gray-500">Live data from Google Sheets • Updated every 4 hours</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast">Please select a brand first!</div>
+
+    <script>
+    // Floating Particles
+    function createParticles() {
+        const particles = document.getElementById('particles');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+            particle.style.animationDelay = Math.random() * 20 + 's';
+            particles.appendChild(particle);
+        }
+    }
+
+    // Brand & Platform Logic
+    document.addEventListener('DOMContentLoaded', () => {
+        feather.replace();
+        createParticles();
+
+        const brandCards = document.querySelectorAll('.brand-card');
+        const platformCards = document.querySelectorAll('.platform-card');
+        const brandStatus = document.getElementById('brand-status');
+        const toast = document.getElementById('toast');
+        let selectedBrand = null;
+
+        // Platform base names
+        const platforms = {
+            blinkit: 'blinkit',
+            swiggy: 'swiggy',  // maps to swiggy in filename
+            zepto: 'zepto'
+        };
+
+        brandCards.forEach(card => {
+            card.addEventListener('click', () => {
+                brandCards.forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                selectedBrand = card.getAttribute('data-brand');
+                const brandName = selectedBrand === 'pepe' ? 'Pepe Jeans' : 'Chumbak';
+                brandStatus.innerHTML = `<span class="text-green-400">${brandName}</span> selected`;
+
+                // Update all platform links based on brand
+                platformCards.forEach(p => {
+                    const platformKey = p.getAttribute('data-platform');
+                    const baseName = platforms[platformKey];
+
+                    let href;
+                    if (selectedBrand === 'pepe') {
+                        href = `${baseName}.html`;
+                    } else {
+                        href = `chumbak_${baseName}.html`;
+                    }
+
+                    p.href = href;
+                    p.classList.add('enabled');
+                });
+            });
+        });
+
+        // Prevent click if no brand selected
+        platformCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (!card.classList.contains('enabled')) {
+                    e.preventDefault();
+                    showToast();
+                }
+            });
+        });
+
+        function showToast() {
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        // Animation Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.animate-fadeIn, .animate-fadeInUp').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    });
+
+    // Add CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animation-delay-200 { animation-delay: 0.2s; }
+        .animation-delay-400 { animation-delay: 0.4s; }
+        .animate-fadeIn, .animate- fadeInUp {
+            animation-fill-mode: both;
+            animation-duration: 0.8s;
+        }
+        .hero-text { animation: slideInUp 1s ease-out; }
+    `;
+    document.head.appendChild(style);
+</script>
+</body>
+</html>

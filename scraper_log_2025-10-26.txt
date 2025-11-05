@@ -1,0 +1,108 @@
+[2025-10-26T15:46:42.193Z] PIPELINE STARTED
+[2025-10-26T15:46:42.194Z] STARTING: blinkit_sheets.js
+[2025-10-26T15:47:21.040Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-26T15:47:21.043Z] STARTING: instamart_sheets.js
+[2025-10-26T15:48:03.891Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-26T15:48:03.892Z] STARTING: zepto_sheets.js
+[2025-10-26T15:48:55.052Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-26T15:48:55.053Z] STARTING: chumbak_blinkit_sheets.js
+[2025-10-26T15:50:18.178Z] ✅ SUCCESS: chumbak_blinkit_sheets.js
+[2025-10-26T15:50:18.179Z] STARTING: chumbak_instamart_sheets.js
+[2025-10-26T15:51:20.336Z] ✅ SUCCESS: chumbak_instamart_sheets.js
+[2025-10-26T15:51:20.337Z] STARTING: chumbak_zepto_sheets.js
+[2025-10-26T15:52:07.884Z] ✅ SUCCESS: chumbak_zepto_sheets.js
+[2025-10-26T15:52:07.885Z] STARTING: populate_benchmarks.js
+[2025-10-26T15:53:11.772Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-26T15:53:11.773Z] STARTING: populate_chumbak_benchmarks.js
+[2025-10-26T15:53:19.367Z] ✅ SUCCESS: populate_chumbak_benchmarks.js
+[2025-10-26T15:53:19.368Z] FULL PIPELINE SUCCESS
+[2025-10-26T16:53:02.541Z] PIPELINE STARTED
+[2025-10-26T16:53:02.542Z] STARTING: blinkit_sheets.js
+[2025-10-26T16:53:38.223Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-26T16:53:38.224Z] STARTING: instamart_sheets.js
+[2025-10-26T16:54:20.278Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-26T16:54:20.279Z] STARTING: zepto_sheets.js
+[2025-10-26T16:56:48.435Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-26T16:56:48.438Z] STARTING: chumbak_blinkit_sheets.js
+[2025-10-26T16:58:03.111Z] ✅ SUCCESS: chumbak_blinkit_sheets.js
+[2025-10-26T16:58:03.113Z] STARTING: chumbak_instamart_sheets.js
+[2025-10-26T16:59:03.833Z] ✅ SUCCESS: chumbak_instamart_sheets.js
+[2025-10-26T16:59:03.834Z] STARTING: chumbak_zepto_sheets.js
+[2025-10-26T16:59:50.774Z] ✅ SUCCESS: chumbak_zepto_sheets.js
+[2025-10-26T16:59:50.775Z] STARTING: populate_benchmarks.js
+[2025-10-26T17:00:52.719Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-26T17:00:52.720Z] STARTING: populate_chumbak_benchmarks.js
+[2025-10-26T17:00:56.363Z] ✅ SUCCESS: populate_chumbak_benchmarks.js
+[2025-10-26T17:00:56.364Z] FULL PIPELINE SUCCESS
+[2025-10-26T17:13:02.113Z] PIPELINE STARTED
+[2025-10-26T17:13:02.114Z] STARTING: blinkit_sheets.js
+[2025-10-26T17:13:39.520Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-26T17:13:39.521Z] STARTING: instamart_sheets.js
+[2025-10-26T17:14:23.090Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-26T17:14:23.092Z] STARTING: zepto_sheets.js
+[2025-10-26T17:15:52.533Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-26T17:15:52.534Z] STARTING: chumbak_blinkit_sheets.js
+[2025-10-26T17:17:09.185Z] ✅ SUCCESS: chumbak_blinkit_sheets.js
+[2025-10-26T17:17:09.187Z] STARTING: chumbak_instamart_sheets.js
+[2025-10-26T17:18:18.804Z] ✅ SUCCESS: chumbak_instamart_sheets.js
+[2025-10-26T17:18:18.804Z] STARTING: chumbak_zepto_sheets.js
+[2025-10-26T17:19:07.616Z] ✅ SUCCESS: chumbak_zepto_sheets.js
+[2025-10-26T17:19:07.617Z] STARTING: populate_benchmarks.js
+[2025-10-26T17:20:34.964Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-26T17:20:34.964Z] STARTING: populate_chumbak_benchmarks.js
+[2025-10-26T17:20:38.900Z] ✅ SUCCESS: populate_chumbak_benchmarks.js
+[2025-10-26T17:20:38.901Z] FULL PIPELINE SUCCESS
+[2025-10-26T17:36:30.749Z] PIPELINE STARTED
+[2025-10-26T17:36:30.750Z] STARTING: blinkit_sheets.js
+[2025-10-26T17:37:08.212Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-26T17:37:08.215Z] STARTING: instamart_sheets.js
+[2025-10-26T17:37:48.218Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-26T17:37:48.220Z] STARTING: zepto_sheets.js
+[2025-10-26T17:39:10.056Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-26T17:39:10.057Z] STARTING: chumbak_blinkit_sheets.js
+[2025-10-26T17:40:24.379Z] ✅ SUCCESS: chumbak_blinkit_sheets.js
+[2025-10-26T17:40:24.379Z] STARTING: chumbak_instamart_sheets.js
+[2025-10-26T17:41:21.537Z] ✅ SUCCESS: chumbak_instamart_sheets.js
+[2025-10-26T17:41:21.537Z] STARTING: chumbak_zepto_sheets.js
+[2025-10-26T17:42:13.024Z] ✅ SUCCESS: chumbak_zepto_sheets.js
+[2025-10-26T17:42:13.025Z] STARTING: populate_benchmarks.js
+[2025-10-26T17:43:25.128Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-26T17:43:25.128Z] STARTING: populate_chumbak_benchmarks.js
+[2025-10-26T17:43:28.690Z] ✅ SUCCESS: populate_chumbak_benchmarks.js
+[2025-10-26T17:43:28.690Z] FULL PIPELINE SUCCESS
+[2025-10-26T18:24:54.328Z] PIPELINE STARTED
+[2025-10-26T18:24:54.329Z] STARTING: blinkit_sheets.js
+[2025-10-26T18:25:32.224Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-26T18:25:32.226Z] STARTING: instamart_sheets.js
+[2025-10-26T18:26:19.838Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-26T18:26:19.839Z] STARTING: zepto_sheets.js
+[2025-10-26T18:27:40.757Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-26T18:27:40.758Z] STARTING: chumbak_blinkit_sheets.js
+[2025-10-26T18:28:57.286Z] ✅ SUCCESS: chumbak_blinkit_sheets.js
+[2025-10-26T18:28:57.286Z] STARTING: chumbak_instamart_sheets.js
+[2025-10-26T18:29:58.633Z] ✅ SUCCESS: chumbak_instamart_sheets.js
+[2025-10-26T18:29:58.633Z] STARTING: chumbak_zepto_sheets.js
+[2025-10-26T18:30:46.842Z] ✅ SUCCESS: chumbak_zepto_sheets.js
+[2025-10-26T18:30:46.843Z] STARTING: populate_benchmarks.js
+[2025-10-26T18:31:51.872Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-26T18:31:51.872Z] STARTING: populate_chumbak_benchmarks.js
+[2025-10-26T18:31:55.670Z] ✅ SUCCESS: populate_chumbak_benchmarks.js
+[2025-10-26T18:31:55.671Z] FULL PIPELINE SUCCESS
+[2025-10-26T19:18:34.839Z] PIPELINE STARTED
+[2025-10-26T19:18:34.840Z] STARTING: blinkit_sheets.js
+[2025-10-26T19:19:11.660Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-26T19:19:11.662Z] STARTING: instamart_sheets.js
+[2025-10-26T19:19:53.018Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-26T19:19:53.022Z] STARTING: zepto_sheets.js
+[2025-10-26T19:21:15.940Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-26T19:21:15.940Z] STARTING: chumbak_blinkit_sheets.js
+[2025-10-26T19:22:30.136Z] ✅ SUCCESS: chumbak_blinkit_sheets.js
+[2025-10-26T19:22:30.137Z] STARTING: chumbak_instamart_sheets.js
+[2025-10-26T19:23:32.457Z] ✅ SUCCESS: chumbak_instamart_sheets.js
+[2025-10-26T19:23:32.458Z] STARTING: chumbak_zepto_sheets.js
+[2025-10-26T19:24:18.367Z] ✅ SUCCESS: chumbak_zepto_sheets.js
+[2025-10-26T19:24:18.368Z] STARTING: populate_benchmarks.js
+[2025-10-26T19:25:44.619Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-26T19:25:44.620Z] STARTING: populate_chumbak_benchmarks.js
+[2025-10-26T19:25:48.176Z] ✅ SUCCESS: populate_chumbak_benchmarks.js
+[2025-10-26T19:25:48.176Z] FULL PIPELINE SUCCESS

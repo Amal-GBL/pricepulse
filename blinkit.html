@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit - PricePulse</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+    :root {
+        --glow-purple: 0 0 20px rgba(102, 126, 234, 0.6);
+        --glow-indigo: 0 0 20px rgba(99, 102, 241, 0.4);
+    }
+    body { 
+        background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+        overflow-x: hidden;
+    }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .table-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    tbody tr { transition: background-color 0.2s ease; }
+    tbody tr:hover { background: rgba(255, 255, 255, 0.05) !important; }
+    .price-up { color: #ef4444; }
+    .price-down { color: #10b981; }
+    .price-neutral { color: #94a3b8; }
+    .btn-refresh {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    .btn-refresh::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+    }
+    .btn-refresh:hover::before { left: 100%; }
+    .btn-refresh:hover { transform: scale(1.05); box-shadow: var(--glow-indigo); }
+    .fadeInUp { animation: fadeInUp 0.8s ease-out; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 768px) { .table-card { backdrop-filter: blur(10px); } }
+</style>
+</head>
+<body>    
+<header class="gradient-bg text-white shadow-2xl relative z-10">
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center animate-pulse">
+                    <i data-feather="dollar-sign" class="w-7 h-7"></i>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold">PricePulse</h1>
+                    <p class="text-indigo-100">Smart Price Tracking</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="/" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Home</a></li>
+                    <li><a href="blinkit.html" class="bg-white text-indigo-600 px-3 py-1 rounded font-semibold">Blinkit</a></li>
+                    <li><a href="swiggy.html" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Swiggy</a></li>
+                    <li><a href="zepto.html" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Zepto</a></li>
+                    <li><a href="benchmarks.html" class="text-lg font-semibold hover:text-indigo-200 transition-all duration-300 hover:scale-110">Benchmarks</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container mx-auto px-4 py-12 relative z-10">
+    <div class="text-center mb-12 fadeInUp">
+        <h2 class="text-4xl font-bold text-white mb-4"> Blinkit Listings</h2>
+        <p class="text-xl text-gray-300">Current price and status • Updates every 4 hours</p>
+    </div>
+
+    <div class="table-card rounded-2xl overflow-hidden fadeInUp" style="animation-delay: 0.2s">
+        <div class="p-6 bg-white/5 border-b border-white/10">
+            <div class="flex flex-col md:flex-row gap-4 mb-4">
+                <input type="text" id="searchInput" placeholder="🔍 Search products..." 
+                       class="flex-1 p-4 bg-white/10 border border-white/30 rounded-xl text-indigo-600 placeholder-indigo-600 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 focus:text-indigo-600">
+                
+                <select id="sortSelect" 
+      class="p-4 bg-white/10 border border-white/30 rounded-xl text-indigo-600 placeholder-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 focus:text-indigo-600">
+
+                    <option value="name">Sort by Name</option>
+                    <option value="price">Price ↑</option>
+                    <option value="price-desc">Price ↓</option>
+                    <option value="original">Original ↑</option>
+                    <option value="original-desc">Original ↓</option>
+                    <option value="discount">Discount</option>
+                    <option value="benchmark">Benchmark ↑</option>
+                    <option value="benchmark-desc">Benchmark ↓</option>
+                    <option value="diff">Diff ↑</option>
+                    <option value="diff-desc">Diff ↓</option>
+                </select>
+                
+                <select id="statusFilter" class="p-4 bg-white/10 border border-white/20 rounded-xl text-indigo-600 focus:ring-2 focus:ring-indigo-500">
+                    <option value="">All Status</option>
+                    <option value="above">Above Benchmark</option>
+                    <option value="below">Below Benchmark</option>
+                    <option value="at">At Benchmark</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="overflow-x-auto">
+            <table class="min-w-full">
+                <thead class="bg-white/5">
+                    <tr>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Product</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Price</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Original</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Discount</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Benchmark</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Diff</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-300 uppercase">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="productsTable" class="divide-y divide-white/10">
+                    <tr><td colspan="7" class="text-center py-12 text-gray-400"><i data-feather="loader" class="w-6 h-6 mx-auto animate-spin"></i><br>Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-6 p-6 bg-white/5 border-t border-white/10">
+            <div class="flex justify-center space-x-4">
+                <button onclick="fetchData()" class="btn-refresh text-white px-8 py-3 rounded-xl font-semibold">
+                    Refresh Data
+                </button>
+                <button onclick="loadBenchmarksOnly()" class="btn-refresh text-white px-8 py-3 rounded-xl font-semibold">
+                    Refresh Benchmarks
+                </button>
+            </div>
+            <p class="mt-4 text-center text-sm text-gray-400">Last updated: <span id="lastUpdated">Never</span></p>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-gray-900/50 backdrop-blur-sm text-white py-12 mt-12 relative z-10 border-t border-white/10">
+    <div class="container mx-auto px-4 text-center">
+        <div class="flex justify-center items-center space-x-6 mb-6">
+            <i data-feather="dollar-sign" class="w-8 h-8 text-indigo-400"></i>
+            <h3 class="text-2xl font-bold">PricePulse</h3>
+        </div>
+        <p class="text-gray-400 mb-4">© 2025 PricePulse - Blinkit Prices</p>
+        <p class="text-sm text-gray-500">Live data from Google Sheets • Updated every 4 hours</p>
+    </div>
+</footer>
+
+<script>
+let blinkitProducts = [];
+let benchmarks = {};
+const SHEET_ID = '17CaPQYQIpC5wG16lYWHRbCy04eRzYCjfK0a-wBM2z2c';
+
+async function fetchData() {
+    try {
+        const blinkitRes = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=blinkit`);
+        const blinkitText = await blinkitRes.text();
+        const benchmarksRes = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=benchmarks`);
+        const benchmarksText = await benchmarksRes.text();
+
+        const blinkitData = parseCSV(blinkitText);
+        const benchmarksData = parseCSV(benchmarksText);
+
+        blinkitProducts = processSheetData(blinkitData, 'blinkit');
+        benchmarks = processBenchmarks(benchmarksData);
+        displayProducts();
+        updateLastUpdated();
+    } catch (error) {
+        console.error(error);
+        document.getElementById('productsTable').innerHTML =
+            '<tr><td colspan="7" class="text-center py-12 text-red-400">❌ Error! Make sheet PUBLIC</td></tr>';
+    }
+}
+
+function parseCSV(csv) {
+    const lines = csv.split('\n').filter(line => line.trim());
+    const result = [];
+
+    for (let line of lines) {
+        const row = [];
+        let field = '';
+        let inQuotes = false;
+
+        for (let i = 0; i < line.length; i++) {
+            const char = line[i];
+            const nextChar = line[i + 1];
+
+            if (char === '"') {
+                if (inQuotes && nextChar === '"') {
+                    field += '"';
+                    i++;
+                } else {
+                    inQuotes = !inQuotes;
+                }
+            } else if ((char === ',' || char === '\t') && !inQuotes) {
+                row.push(field.trim());
+                field = '';
+            } else {
+                field += char;
+            }
+        }
+        row.push(field.trim());
+        result.push(row.map(cell => cell.replace(/^"|"$/g, '').trim()));
+    }
+
+    return result;
+}
+
+function processSheetData(data, platform) {
+    if (!data || !data.length) return [];
+    const rows = data.slice(1);
+
+    return rows.map(row => {
+        while (row.length < 5) row.push('');
+        const name = row[0]?.trim();
+        if (!name) return null;
+
+        const price = parseFloat(row[2]) || 0;
+        const original = parseFloat(row[3]) || 0;
+
+        if (price <= 0) return null;
+
+        let discount = '—';
+        if (original > 0) {
+            discount = ((original - price) / original * 100).toFixed(1) + '%';
+        }
+
+        return { name, price, current_price: price, original_price: original, discount, platform };
+    }).filter(Boolean);
+}
+
+function processBenchmarks(data) {
+    if (!data || !data.length) return {};
+    const rows = data.slice(1);
+    const b = {};
+    rows.forEach(row => {
+        if (row.length >= 4) {
+            const name = row[0]?.toLowerCase().trim();
+            if (name) {
+                b[name] = {
+                    blinkit: row[1] === '' ? '' : parseFloat(row[1]),
+                    swiggy: row[2] === '' ? '' : parseFloat(row[2]),
+                    zepto: row[3] === '' ? '' : parseFloat(row[3])
+                };
+            }
+        }
+    });
+    return b;
+}
+
+function sortProducts(products, sortBy) {
+    return [...products].sort((a, b) => {
+        const benchmarkA = findFuzzyBenchmark(a.name) || 0;
+        const benchmarkB = findFuzzyBenchmark(b.name) || 0;
+        const diffA = benchmarkA ? a.price - benchmarkA : 0;
+        const diffB = benchmarkB ? b.price - benchmarkB : 0;
+
+        switch(sortBy) {
+            case 'name': return a.name.localeCompare(b.name);
+            case 'price': return a.price - b.price;
+            case 'price-desc': return b.price - a.price;
+            case 'original': return a.original_price - b.original_price;
+            case 'original-desc': return b.original_price - a.original_price;
+            case 'discount': return (parseFloat(a.discount)||0) - (parseFloat(b.discount)||0);
+            case 'benchmark': return benchmarkA - benchmarkB;
+            case 'benchmark-desc': return benchmarkB - benchmarkA;
+            case 'diff': return diffA - diffB;
+            case 'diff-desc': return diffB - diffA;
+            default: return 0;
+        }
+    });
+}
+
+function displayProducts() {
+    const tbody = document.getElementById('productsTable');
+    const sortBy = document.getElementById('sortSelect').value;
+    const statusFilter = document.getElementById('statusFilter').value;
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase().trim();
+
+    let filteredProducts = [...blinkitProducts];
+
+    // ⭐ Search filter
+    if (searchQuery) {
+        filteredProducts = filteredProducts.filter(p => p.name.toLowerCase().includes(searchQuery));
+    }
+
+    // ⭐ Status filter
+    if (statusFilter) {
+        filteredProducts = filteredProducts.filter(p => {
+            const benchmark = findFuzzyBenchmark(p.name) || 0;
+            const diff = benchmark ? p.price - benchmark : 0;
+            const status = diff > 0 ? 'above' : diff < 0 ? 'below' : 'at';
+            return status === statusFilter;
+        });
+    }
+
+    // ⭐ Sort
+    filteredProducts = sortProducts(filteredProducts, sortBy);
+
+    tbody.innerHTML = '';
+    if (filteredProducts.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" class="text-center py-12 text-gray-400">No products found</td></tr>';
+        return;
+    }
+
+    filteredProducts.forEach(product => {
+        const benchmark = findFuzzyBenchmark(product.name) || '';
+        const diff = benchmark === '' ? 0 : product.price - benchmark;
+        const row = document.createElement('tr');
+        row.className = 'hover:bg-white/5 transition-colors';
+        row.innerHTML = `
+            <td class="px-6 py-4 text-sm font-medium text-white">${product.name}</td>
+            <td class="px-6 py-4 text-sm text-white font-semibold">₹${product.price.toFixed(2)}</td>
+            <td class="px-6 py-4 text-sm text-gray-400">₹${product.original_price.toFixed(2)}</td>
+            <td class="px-6 py-4 text-sm ${product.discount ? 'text-green-400' : 'text-gray-400'}">${product.discount || '0%'}</td>
+            <td class="px-6 py-4 text-sm text-gray-400">₹${benchmark === '' ? '—' : benchmark.toFixed(2)}</td>
+            <td class="px-6 py-4 text-sm ${diff > 0 ? 'text-red-400' : diff < 0 ? 'text-green-400' : 'text-gray-400'}">₹${diff.toFixed(2)}</td>
+            <td class="px-6 py-4">
+                <span class="px-3 py-1 text-xs rounded-full font-semibold ${
+                    diff > 0 ? 'bg-red-500/20 text-red-400' :
+                    diff < 0 ? 'bg-green-500/20 text-green-400' :
+                    'bg-gray-500/20 text-gray-400'
+                }">${diff > 0 ? 'Above' : diff < 0 ? 'Below' : 'At'} Benchmark</span>
+            </td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+function findFuzzyBenchmark(name) {
+    const productLower = name.toLowerCase().trim();
+    if (benchmarks[productLower]?.blinkit !== undefined) {
+        const benchmark = benchmarks[productLower]?.blinkit;
+        if (benchmark !== '') return benchmark;
+    }
+    for (let sheetName of Object.keys(benchmarks)) {
+        const benchmark = benchmarks[sheetName]?.blinkit;
+        if (benchmark === '') continue;
+        const sheetLower = sheetName.toLowerCase().trim();
+        const productWords = productLower.split(' ');
+        const sheetWords = sheetLower.split(' ');
+        let matches = 0;
+        productWords.forEach(word => { if(sheetWords.some(s=>s.includes(word)||word.includes(s))) matches++; });
+        if (matches >= 2) return benchmark;
+    }
+    return '';
+}
+
+function updateLastUpdated() { document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString(); }
+
+async function loadBenchmarksOnly() {
+    try {
+        const res = await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=benchmarks`);
+        const csv = await res.text();
+        benchmarks = processBenchmarks(parseCSV(csv));
+        displayProducts();
+    } catch (error) { console.error(error); }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    feather.replace();
+    fetchData();
+    setInterval(fetchData, 30000);
+
+    // ⭐ Event listeners for live filtering
+    document.getElementById('searchInput').addEventListener('input', displayProducts);
+    document.getElementById('sortSelect').addEventListener('change', displayProducts);
+    document.getElementById('statusFilter').addEventListener('change', displayProducts);
+});
+</script>
+</body>
+</html>

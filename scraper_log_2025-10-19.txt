@@ -1,0 +1,100 @@
+[2025-10-19T16:56:37.187Z] 🎯 PIPELINE STARTED
+[2025-10-19T16:56:37.187Z] 🚀 STARTING: blinkit_sheets.js
+[2025-10-19T16:56:37.265Z] ❌ FAILED: blinkit_sheets.js
+[2025-10-19T16:56:37.266Z] 💥 ERROR: Command failed: node blinkit_sheets.js
+node:internal/modules/cjs/loader:1423
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/mac/Documents/pricepulsesite/blinkit_sheets.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.9.0
+
+[2025-10-19T16:56:37.267Z] 💥 PIPELINE STOPPED at blinkit_sheets.js
+[2025-10-19T17:00:31.634Z] 🎯 PIPELINE STARTED
+[2025-10-19T17:00:31.635Z] 🚀 STARTING: blinkit_sheets.js
+[2025-10-19T17:00:31.714Z] ❌ FAILED: blinkit_sheets.js
+[2025-10-19T17:00:31.714Z] 💥 ERROR: Command failed: node blinkit_sheets.js
+node:internal/modules/cjs/loader:1423
+  throw err;
+  ^
+
+Error: Cannot find module 'puppeteer'
+Require stack:
+- /Users/mac/Documents/pricepulsesite/blinkit_sheets.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.require (node:internal/modules/cjs/loader:1503:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/Users/mac/Documents/pricepulsesite/blinkit_sheets.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/Users/mac/Documents/pricepulsesite/blinkit_sheets.js' ]
+}
+
+Node.js v24.9.0
+
+[2025-10-19T17:00:31.716Z] 💥 PIPELINE STOPPED at blinkit_sheets.js
+[2025-10-19T17:19:25.925Z] 🎯 PIPELINE STARTED
+[2025-10-19T17:19:25.934Z] 🚀 STARTING: blinkit_sheets.js
+[2025-10-19T17:19:26.022Z] ❌ FAILED: blinkit_sheets.js
+[2025-10-19T17:19:26.023Z] 💥 ERROR: Command failed: node blinkit_sheets.js
+node:internal/modules/cjs/loader:1423
+  throw err;
+  ^
+
+Error: Cannot find module 'puppeteer'
+Require stack:
+- /Users/mac/Documents/pricepulsesite/blinkit_sheets.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.require (node:internal/modules/cjs/loader:1503:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/Users/mac/Documents/pricepulsesite/blinkit_sheets.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1760:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/Users/mac/Documents/pricepulsesite/blinkit_sheets.js' ]
+}
+
+Node.js v24.9.0
+
+[2025-10-19T17:19:26.024Z] 💥 PIPELINE STOPPED at blinkit_sheets.js
+[2025-10-19T17:21:08.087Z] 🎯 PIPELINE STARTED
+[2025-10-19T17:21:08.088Z] 🚀 STARTING: blinkit_sheets.js
+[2025-10-19T17:21:50.733Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-19T17:21:50.734Z] 🚀 STARTING: instamart_sheets.js
+[2025-10-19T17:22:36.822Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-19T17:22:36.824Z] 🚀 STARTING: zepto_sheets.js
+[2025-10-19T17:23:28.027Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-19T17:23:28.028Z] 🚀 STARTING: populate_benchmarks.js
+[2025-10-19T17:23:32.861Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-19T17:23:32.863Z] 🎉 FULL PIPELINE SUCCESS
+[2025-10-19T17:24:31.499Z] 🎯 PIPELINE STARTED
+[2025-10-19T17:24:31.500Z] 🚀 STARTING: blinkit_sheets.js
+[2025-10-19T17:25:08.170Z] ✅ SUCCESS: blinkit_sheets.js
+[2025-10-19T17:25:08.171Z] 🚀 STARTING: instamart_sheets.js
+[2025-10-19T17:25:47.748Z] ✅ SUCCESS: instamart_sheets.js
+[2025-10-19T17:25:47.749Z] 🚀 STARTING: zepto_sheets.js
+[2025-10-19T17:26:38.947Z] ✅ SUCCESS: zepto_sheets.js
+[2025-10-19T17:26:38.948Z] 🚀 STARTING: populate_benchmarks.js
+[2025-10-19T17:26:44.932Z] ✅ SUCCESS: populate_benchmarks.js
+[2025-10-19T17:26:44.933Z] 🎉 FULL PIPELINE SUCCESS
